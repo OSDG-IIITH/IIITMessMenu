@@ -1,0 +1,19 @@
+version: '3.9'
+
+networks:
+    iiitmessmenu_network:
+        ipam:
+            config:
+                - subnet: ${MESSMENU_HOST_SUBNET}
+
+services:
+    iiitmessmenu:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks:
+            iiitmessmenu_network:
+                ipv4_address: ${MESSMENU_HOST_PRIVATE}
+        env_file:
+            - ./.env
+        tty: true
