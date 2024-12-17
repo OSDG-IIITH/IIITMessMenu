@@ -345,14 +345,14 @@ function App() {
         >
           <Box sx={{ float: "left", marginLeft: "10px", marginTop: "10px" }}>
             <Typography variant="body2" color="text.primary">
-              © 2023, vjspranav
+              © 2023, vjspranav. Now maintained by OSDG.
             </Typography>
           </Box>
           <Box sx={{ float: "right", marginRight: "10px", marginTop: "10px" }}>
             <Typography variant="body2" color="text.primary">
               Source:{" "}
               <Link
-                href="https://github.com/vjspranav/IIITMessMenu/"
+                href="https://github.com/OSDG-IIITH/IIITMessMenu/"
                 target="_blank"
                 rel="noreferrer"
                 color="secondary"
